@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Продуктів - Капітанівка</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-store"></i>
+                    <span>Магазин Продуктів</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#products">Товари</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Свіжі продукти для вашої родини</h1>
+                <p class="hero-subtitle">У самому серці Капітанівки - якісні продукти, доступні ціни, зручне розташування</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Переглянути товари</a>
+                    <a href="#contact" class="btn btn-secondary">Як нас знайти</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-card">
+                    <i class="fas fa-shopping-basket"></i>
+                    <h3>Свіжі продукти</h3>
+                    <p>Щодня нові надходження</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Чому обирають нас</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Зручне розташування</h3>
+                    <p>В центрі Капітанівки, легко дістатися з будь-якої частини села</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Зручний графік</h3>
+                    <p>Працюємо з ранку до вечора для вашої зручності</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Турбота про клієнтів</h3>
+                    <p>Індивідуальний підхід та привітний персонал</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Якісні продукти</h3>
+                    <p>Тільки свіжі та якісні продукти для вашої родини</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Наші товари</h2>
+            <div class="products-filter">
+                <button class="filter-btn active" data-category="all">Всі товари</button>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Про наш магазин</h2>
+                    <p>Ми - сімейний магазин продуктів у Капітанівці, який працює на благо нашої громади вже багато років. Наша мета - забезпечити жителів села свіжими, якісними продуктами за доступними цінами.</p>
+                    <p>Розташований у самому центрі села, наш магазин легко доступний для всіх жителів. Ми пишаємося тим, що знаємо наших клієнтів особисто та завжди готові допомогти з вибором найкращих продуктів.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>років роботи</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>задоволених клієнтів</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>видів товарів</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Сімейний бізнес</h3>
+                        <p>Працюємо з любов'ю до справи</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Контакти</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Адреса</h3>
+                            <p>вул. Смілянська, 37 а<br>Капітанівка, Кіровоградська область<br>Україна, 26010</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Графік роботи</h3>
+                            <p>Пн-Пт: 8:00 - 20:00<br>Сб-Нд: 9:00 - 19:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Телефон</h3>
+                            <p>+380 (XX) XXX-XX-XX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Карта розташування</p>
+                        <small>Капітанівка, Кіровоградська область</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-store"></i>
+                        <span>Магазин Продуктів</span>
+                    </div>
+                    <p>Ваш надійний постачальник свіжих продуктів у Капітанівці</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Швидкі посилання</h3>
+                    <ul>
+                        <li><a href="#home">Головна</a></li>
+                        <li><a href="#products">Товари</a></li>
+                        <li><a href="#about">Про нас</a></li>
+                        <li><a href="#contact">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакти</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> вул. Смілянська, 37 а, Капітанівка</p>
+                    <p><i class="fas fa-phone"></i> +380 (XX) XXX-XX-XX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Магазин Продуктів. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
